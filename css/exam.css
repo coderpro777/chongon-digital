@@ -1,0 +1,51 @@
+/*colores
+gray = 	#393E46
+cyan = 	#00ADB5
+white = #FFF4E0
+yellow = #F8B500
+red =	#FC3C3C
+*/
+
+.pregunta-container{
+	border: solid 3px #FC3C3C;
+	border-radius: 10px;
+	text-align: justify;
+	margin-top: 1rem;
+}
+
+.respuesta-container{
+	border: solid 3px #00ADB5;
+	border-radius: 10px;
+	text-align: justify;
+	margin-top: 1rem;
+	background: #11DAED
+}
+
+.respuesta{
+	border-radius: 10px;
+	border: solid 2px yellow;
+	background: #10569e; 
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	color:white;
+	z-index: 1;
+
+}
+
+.drop-active{
+	background-color: #0094FF; 
+	border: dotted 3px #FC3C3C;
+}
+.dropzone{
+	height: 100px;
+	background-color: #ffc107;
+	margin-bottom : 1em;
+}
+
+.drop-target {
+  background-color: #29D628FF;
+  color: #FFF;
+  border-color:#30CE6DFF;
+  border-style: solid;
+}
+
