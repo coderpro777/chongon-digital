@@ -1,8 +1,7 @@
 <?php 
 // $modulo = $_GET['mod'];
 $modulo = 1;
-$usuario = 'root';
-$password = '';
+include("conexion2.php");
 $respuestas = array();
 
 $sql = "SELECT a.id,a.modulo,a.contenido,b.id id_respuesta,b.respuesta 
@@ -13,7 +12,7 @@ and a.id = b.pregunta
 ORDER BY RAND() LIMIT 10";
 
 //Proba la conexion
-if (!$con = mysqli_connect("localhost",$usuario,$password,"chongon")) {
+if (!$con = mysqli_connect("localhost",$usuario,$password,$databse)) {
   echo "No se Puede crear la conexion.";
 }
 ?>

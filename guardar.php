@@ -7,13 +7,12 @@
 	$passdado = $_POST['con'];
 	$passAdmin = '';
 
-	$usuario = 'root';
-	$password = '';
+	include("conexion2.php");
 	//variable para guadar la sumtoria de los puntajes
 	
 	//conexion
-	$con = mysqli_connect("localhost",$usuario,$password,"chongon");
-	if (!$con = mysqli_connect("localhost",$usuario,$password,"chongon")) {
+	$con = mysqli_connect("localhost",$usuario,$password,$databse);
+	if (!$con = mysqli_connect("localhost",$usuario,$password,$database)) {
   		echo "No se Puede crear la conexion.";
 	}
 	

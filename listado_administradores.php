@@ -1,10 +1,8 @@
 <?php 
 $query="SELECT * FROM administradores";
-$usuario = 'root';
-$password = '';
-
+include("conexion2.php");
 //Proba la conexion
-if (!$con = mysqli_connect("localhost",$usuario,$password,"chongon")) {
+if (!$con = mysqli_connect("localhost",$usuario,$password,$database)) {
   echo "No se Puede crear la conexion.";
 }
 ?>

@@ -2,13 +2,12 @@
 	//datos que llegan del ajax
 	$data = $_POST['respuestas'];
 	
-	$usuario = 'root';
-	$password = '';
+	include("conexion2.php");
 	//variable para guadar la sumtoria de los puntajes
 	$puntaje = 0;
 	//conexion
-	$con = mysqli_connect("localhost",$usuario,$password,"chongon");
-	if (!$con = mysqli_connect("localhost",$usuario,$password,"chongon")) {
+	$con = mysqli_connect("localhost",$usuario,$password,$database);
+	if (!$con = mysqli_connect("localhost",$usuario,$password,$database)) {
   		echo "No se Puede crear la conexion.";
 	}
 	//recorrer el array que llega del usuario

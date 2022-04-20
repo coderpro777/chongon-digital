@@ -5,9 +5,8 @@ $accion= $_POST['accion'];
 
 
 print_r($datos);
-$usuario = 'root';
-$password = '';
-$con = mysqli_connect("localhost",$usuario,$password,"chongon");
+include("conexion2.php");
+$con = mysqli_connect("localhost",$usuario,$password,$database);
 
 
 if ($accion == "edit") {
