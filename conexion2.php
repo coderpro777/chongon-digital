@@ -5,6 +5,6 @@ $password = '0r:3p9eK@T4YLd';
 $database = 'azwebso1_chongon';
 
 //Proba la conexion
-$con2 = mysqli_connect("localhost",$usuario,$password,$database);
+
 
 ?>
